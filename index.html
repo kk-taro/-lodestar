@@ -144,7 +144,7 @@ border-top:1px solid var(--pink);border-right:1px solid var(--pink);transform:ro
 <body>
 <!-- ══ SCREEN 0: COVER ══ -->
 <div class="screen active" id="s0">
-  <div class="runner"><span class="rb">AI-前沿顾问及研究员</span><span class="rm"><em>01</em> / 05</span></div>
+  <div class="runner"><span class="rb">AI-前沿顾问及研究员</span><span class="rm"><em>01</em> / 06</span></div>
   <div class="cw">
     <!-- <div class="kk">AI · 产品 · 应届</div> -->
     <div class="glow" style="font-size:clamp(72px,10vw,140px);margin-bottom:20px;padding-bottom:.1em">曾琬珂</div>
@@ -153,28 +153,64 @@ border-top:1px solid var(--pink);border-right:1px solid var(--pink);transform:ro
     </div>
     <div class="nbtns">
       <div class="btn-group">
-        <button class="nbtn" onclick="go(1)">个人履历</button>
+        <button class="nbtn" onclick="go(1)">自我说明</button>
+      </div>
+      <div class="btn-group">
+        <button class="nbtn" onclick="go(2)">个人履历</button>
         <!-- <div class="btn-hook">蚂蚁 · 信也 · AI 产品</div> -->
       </div>
       <div class="btn-group">
-        <button class="nbtn" onclick="go(2)">我怎么看人</button>
+        <button class="nbtn" onclick="go(3)">我怎么看人</button>
         <!-- <div class="btn-hook">荣格说了一句让我很在意的话</div> -->
       </div>
       <div class="btn-group">
-        <button class="nbtn" onclick="go(3)">我怎么看 AI</button>
+        <button class="nbtn" onclick="go(4)">我怎么看 AI</button>
         <!-- <div class="btn-hook">AI 会产生幻觉，人也会</div> -->
       </div>
       <div class="btn-group">
-        <button class="nbtn" onclick="go(4)">我想验证的一件事</button>
+        <button class="nbtn" onclick="go(5)">我想验证的一件事</button>
         <!-- <div class="btn-hook">他们说想转行，但我听到的是另一句话</div> -->
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══ SCREEN 1: 履历 ══ -->
+<!-- ══ SCREEN 1: 自我说明 ══ -->
 <div class="screen" id="s1">
-  <div class="runner"><span class="rb">个人履历</span><span class="rm"><em>02</em> / 05</span></div>
+  <div class="runner"><span class="rb">自我说明</span><span class="rm"><em>02</em> / 06</span></div>
+  <div class="cw">
+    <div class="kk">About Me</div>
+    <div class="glow" style="font-size:clamp(48px,7vw,80px);margin-bottom:56px;padding-bottom:.1em">自我说明</div>
+    <div class="bd" style="max-width:700px">
+      <p style="margin-bottom:24px">
+        我是一名女生。大脑<em>晚上</em>活跃，也可以睡很久。
+      </p>
+      <p style="margin-bottom:24px">
+        我非常爱探索新鲜事物——可以开电动车在城市闲逛一个小时。出门吃什么，取决于我在路上看到了什么店。
+      </p>
+      <p style="margin-bottom:24px">
+        我也很热爱摄影，喜欢给别人和自己拍照（P图也是一把好手）。
+      </p>
+      <p style="margin-bottom:24px">
+        本人也非常热爱旅行，享受一人游，也中意和朋友一起创造的美好回忆。
+      </p>
+      <p style="margin-bottom:24px">
+        我是一个<em>宁愿失去也不会将就</em>的人，一个不会对自己选择后悔的人。
+      </p>
+      <p style="margin-bottom:24px">
+        对待所有事物都是开放包容的心态——我觉得一件事没有真正的好与坏，而是你怎么看待它。
+      </p>
+      <p style="margin-bottom:24px">
+        我是一个对自己很坦诚的人。
+      </p>
+    </div>
+  </div>
+  <button class="bbtn vis" onclick="go(0)">← 返回</button>
+</div>
+
+<!-- ══ SCREEN 2: 履历 ══ -->
+<div class="screen" id="s2">
+  <div class="runner"><span class="rb">个人履历</span><span class="rm"><em>03</em> / 06</span></div>
   <div class="cw">
     <div class="kk">Background</div>
     <div class="glow" style="font-size:clamp(48px,7vw,80px);margin-bottom:56px;padding-bottom:.1em">履历</div>
@@ -199,14 +235,14 @@ border-top:1px solid var(--pink);border-right:1px solid var(--pink);transform:ro
         <div class="tl-feel">→ 我想看 AI 能不能帮我做判断——后来发现它很擅长找信息，不擅长替我决定。</div>
       </div>
     </div>
-    <button class="trans" onclick="go(2)">做产品本质是理解用户需求。那么，人自己知不知道自己想要什么？ <span class="trans-arrow"></span></button>
+    <button class="trans" onclick="go(3)">做产品本质是理解用户需求。那么，人自己知不知道自己想要什么？ <span class="trans-arrow"></span></button>
   </div>
   <button class="bbtn vis" onclick="go(0)">← 返回</button>
 </div>
 
-<!-- ══ SCREEN 2: 我怎么看人 ══ -->
-<div class="screen" id="s2">
-  <div class="runner"><span class="rb">我怎么看人</span><span class="rm"><em>03</em> / 05</span></div>
+<!-- ══ SCREEN 3: 我怎么看人 ══ -->
+<div class="screen" id="s3">
+  <div class="runner"><span class="rb">我怎么看人</span><span class="rm"><em>04</em> / 06</span></div>
   <div class="cw">
     <div class="kk">On People</div>
 
@@ -242,15 +278,15 @@ border-top:1px solid var(--pink);border-right:1px solid var(--pink);transform:ro
         我觉得有点像新闻发言人。也就是说：人的意识不负责做决策，它只负责在决策做完之后、对着麦克风说：“我们之所以这么做，是因为……”。<br><br>
         所以有时候问自己"你为什么这么做"，大脑给你的答案有可能不一定是真正的原因。
       </div>
-      <button class="trans" onclick="go(3)">就像AI的大模型经常会有幻觉，人有时候也会有“幻觉”<span class="trans-arrow"></span></button>
+      <button class="trans" onclick="go(4)">就像AI的大模型经常会有幻觉，人有时候也会有“幻觉”<span class="trans-arrow"></span></button>
     </div>
   </div>
   <button class="bbtn vis" onclick="go(0)">← 返回</button>
 </div>
 
-<!-- ══ SCREEN 3: AI ══ -->
-<div class="screen" id="s3">
-  <div class="runner"><span class="rb">我怎么看 AI</span><span class="rm"><em>04</em> / 05</span></div>
+<!-- ══ SCREEN 4: AI ══ -->
+<div class="screen" id="s4">
+  <div class="runner"><span class="rb">我怎么看 AI</span><span class="rm"><em>05</em> / 06</span></div>
   <div class="cw">
     <div class="kk">On AI</div>
 
@@ -300,15 +336,15 @@ border-top:1px solid var(--pink);border-right:1px solid var(--pink);transform:ro
       <div class="bd" style="max-width:700px;margin-bottom:24px">
         「想转行」这句话拆开：到底想逃离什么，还是被什么吸引？这是我想进来一起做这件事的原因。
       </div>
-      <button class="trans" onclick="go(4)">所以，当有人说「我该不该转行做 AI」——我很好奇他们真正在问什么 <span class="trans-arrow"></span></button>
+      <button class="trans" onclick="go(5)">所以，当有人说「我该不该转行做 AI」——我很好奇他们真正在问什么 <span class="trans-arrow"></span></button>
     </div>
   </div>
   <button class="bbtn vis" onclick="go(0)">← 返回</button>
 </div>
 
-<!-- ══ SCREEN 4: 转行 ══ -->
-<div class="screen" id="s4">
-  <div class="runner"><span class="rb">我想验证的一件事</span><span class="rm"><em>05</em> / 05</span></div>
+<!-- ══ SCREEN 5: 转行 ══ -->
+<div class="screen" id="s5">
+  <div class="runner"><span class="rb">我想验证的一件事</span><span class="rm"><em>06</em> / 06</span></div>
   <div class="cw">
     <div class="kk">On Transition</div>
 
@@ -385,6 +421,7 @@ border-top:1px solid var(--pink);border-right:1px solid var(--pink);transform:ro
   <div class="dot" onclick="go(2)"></div>
   <div class="dot" onclick="go(3)"></div>
   <div class="dot" onclick="go(4)"></div>
+  <div class="dot" onclick="go(5)"></div>
 </div>
 
 <script>
@@ -392,12 +429,12 @@ const S=document.querySelectorAll('.screen'),D=document.querySelectorAll('.dot')
 let cur=0,s3State='idle',s4State='idle',s4Timers=[];
 
 function go(n){
-  if(cur===4&&n!==4)clearS4Timers();
+  if(cur===5&&n!==5)clearS4Timers();
   S[cur].classList.remove('active');D[cur].classList.remove('active');
   cur=n;S[cur].classList.add('active');D[cur].classList.add('active');
   S[cur].scrollTop=0;
-  if(n===3)initS3();
-  if(n===4)initS4();
+  if(n===4)initS3();
+  if(n===5)initS4();
 }
 
 function revealStep(btn,sectionId){
